@@ -118,24 +118,17 @@ if (navigator.geolocation) {
 
 
     }
-
-    navigator.geolocation.getCurrentPosition(success);
+    function failed(e) {
+        alert("Please allow Location and Reload");
+    }
+    navigator.geolocation.getCurrentPosition(success,failed);
 
 }
+
+
 else {
-    let lat = "33.25",
-        lon = "44.43";
-
-    weatherUrl = BASE_URL_WEATHER + API_KEY + "&q=" + lat + "," + lon + "&lang=ar";
-
-    fetch(weatherUrl)
-        .then(response => response.json())
-        .then(data => console.log(data));
-
-    fetch(prayersUrl)
-        .then(response => response.json())
-        .then(data => console.log(data));
-
+    
+    alert("Please allow Location and Reload");
 }
 
 
