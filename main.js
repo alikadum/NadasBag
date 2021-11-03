@@ -28,31 +28,8 @@ if (navigator.geolocation) {
             .then(data => {
                 console.log(data);
                 document.getElementById("city").innerHTML = data.location.region + ", " + data.location.country;
-                document.getElementById("weather").innerHTML = "&deg;الطقس حالياً : " + data.current.condition.text + " و درجة الحرارة هي " + data.current.temp_c;
+                document.getElementById("weather").innerHTML = "&deg;الطقس حالياً : " + data.current.condition.text + " و درجة الحرارة هي " + Math.floor(data.current.temp_c);
 
-                /*
-                midnightUrl = CORS + BASE_URL_PRAYERS_MIDNIGHT + "city=" + data.location.region+ "&date=" + todayDate;
-                console.log(midnightUrl);
-                
-                fetch(midnightUrl)
-                    .then(response => response.json())
-                    .then(data => {
-                console.log(data);
-
-                
-                let hours = parseInt(data.results.datetime[0].times.Midnight.slice(0,-3)),
-                    minutes= parseInt(data.results.datetime[0].times.Midnight);
-                
-                    console.log(minutes);
-                
-                if (hours>12) {
-                    hours -= 12;    
-                }
-                
-                console.log(hours);
-                document.getElementById("midnight").innerHTML = hours +":"+ minutes;
-                });     
-                */
             });
 
 
