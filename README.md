@@ -9,4 +9,4 @@ just  HTML  +  CSS  +  JavaScript
 
 The website is being deployed with Netlify.com
 
-* [NadasBag](https://simple-calcu.netlify.app/)
+* [NadasBag](https://nadasbag.netlify.app/)
