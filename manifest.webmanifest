@@ -1,0 +1,32 @@
+{
+    "theme_color": "#978d84",
+    "background_color": "#3d3833",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/index.html",
+    "name": "\u062d\u0642\u064a\u0628\u0629 \u0646\u062f\u0649",
+    "short_name": "\u0646\u062f\u0649",
+    "description": "\u062d\u0642\u064a\u0628\u0629 \u0627\u0644\u0645\u0624\u0645\u0646 \u0627\u0644\u0649 \u0646\u062f\u0649.",
+    "icons": [
+        {
+            "src": "/Icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/Icons/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/Icons/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/Icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

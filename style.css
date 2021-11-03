@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: "Cairo", sans-serif;
+    font-size: large;
+    background: linear-gradient(#0ad89a, #9198e5);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.headline {
+    width: 100vw;
+    height: 20vh;
+}
+
+h1 {
+    line-height: 20vh;
+    font-style: italic;
+    text-shadow: 2px 2px #FFFFFF;
+    text-align: center;
+}
+
+.city-date {
+    padding-top: 2vh;
+    height: 20vh;
+    line-height: 4vh;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+    
+}
+
+#date,#city {
+    text-decoration: underline;
+}
+
+#weather {
+    font-size: large;
+    font-weight: 300;
+}
+
+.times {
+    height: 45vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    overflow: hidden;
+}
+
+h3 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+.time {
+    text-align: left;
+    padding-left: 4vw;
+}
+
+tr:nth-child(even) {
+    color: black;    
+}
+
+.player {
+    width: 100vw;
+    height: 15vh;
+    
+}
+
+.text {
+    width: 100vw;
+    height: 5vh;
+    line-height: 3vh;
+    text-align: center;
+    color: wheat;
+    text-shadow: 1px 1px #000000;
+    font-size: large;
+    
+}
+
+.play {
+    width: 100vw;
+    height: 10vh;
+}
+
+audio {
+    width: 100%;
+}

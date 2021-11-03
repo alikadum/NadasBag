@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حقيبة ندى</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <script>
+
+
+
+    </script>
+</head>
+
+<body unselectable="on" onselectstart="return false;" onmousedown="return false;">
+
+    <div class="headline">
+        <h1 onclick="location.reload()">حقيبة ندى</h1>
+    </div>
+
+    <div class="city-date">
+        <h2>    <span id="date"></span><br><span id="city"></span> <br> <span id="weather">الطقس</span>     </h2>
+    </div>
+
+    <div class="times">
+
+        <h3>اوقات الصلاة</h3>
+        <table>
+            <tr>
+                <td class="time" id="imsak">0:0</td>
+                <td>الامساك</td>
+            </tr>
+            <tr>
+                <td class="time" id="fajir">0:0</td>
+                <td>صلاة الفجر</td>
+            </tr>
+            <tr>
+                <td class="time" id="sunrise">0:0</td>
+                <td>الشروق</td>
+            </tr>
+            <tr>
+                <td class="time" id="doher">0:0</td>
+                <td>صلاة الضهر</td>
+            </tr>
+            <tr>
+                <td class="time" id="sunset">0:0</td>
+                <td>الغروب</td>
+            </tr>
+            <tr>
+                <td class="time" id="maghrib">0:0</td>
+                <td>صلاة المغرب</td>
+            </tr>
+            <tr>
+                <td class="time" id="midnight">0:0</td>
+                <td>منتصف الليل</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="player">
+
+        <div class="text">
+            مشغل الاذان
+        </div>
+
+        <div class="play">
+
+            <audio controls>
+                <source src="/Files/Azan-Iqama.mp3" type="audio/mpeg">
+                <source src="/Files/Azan-Iqama.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+            </audio>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
