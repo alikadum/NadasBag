@@ -103,13 +103,13 @@ if (navigator.geolocation) {
 
 
                 document.getElementById("date").innerHTML = data.date;
-                document.getElementById("imsak").innerHTML = imsakHours + ":" + imsakMinutes;
+                document.getElementById("imsak").innerHTML = imsakHours + ":" + ('0' + imsakMinutes).slice(-2);
                 document.getElementById("fajir").innerHTML = data.fajir;
                 document.getElementById("sunrise").innerHTML = data.sunrise;
                 document.getElementById("doher").innerHTML = data.doher;
                 document.getElementById("sunset").innerHTML = data.sunset;
                 document.getElementById("maghrib").innerHTML = data.maghrib;
-                document.getElementById("midnight").innerHTML = midnightHours / 2 + ":" + Math.ceil(midnightMinutes / 2);
+                document.getElementById("midnight").innerHTML = midnightHours / 2 + ":" + ('0' + Math.ceil(midnightMinutes / 2)).slice(-2);
 
             });
 
