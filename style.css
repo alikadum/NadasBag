@@ -17,6 +17,8 @@ body {
 }
 
 .activate-azan {
+    width: 100vw;
+    height: 100vh;
     background-color: #0ad89a;
     position: absolute;
     left: 0; 
