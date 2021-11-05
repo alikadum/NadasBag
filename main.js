@@ -12,6 +12,7 @@ let todayDate = yourDate.toISOString().split('T')[0];
 
 
 let azan = document.getElementById("myAudio");
+azan.load();
 
 
 
@@ -100,13 +101,18 @@ if (navigator.geolocation) {
                 todayTime = "5:01"
                 newFajir = data.fajir.slice(0,-1),
                 newDoher = data.doher.slice(0,-1),
-                newMaghrib = data.maghrib.slice(0,-1);
-                  
+                newMaghrib = data.maghrib.slice(0,-1),
+                isPlaying = false;
 
                 setInterval(() => {
                     if (todayTime===newFajir || todayTime===newDoher || todayTime===newMaghrib) {
-                        console.log("play azan");
-                        azan.play();
+                        
+                        if (!isPlaying) {
+                            console.log("play azan");
+                            azan.play();
+                            isPlaying = true;
+                        }
+                        
                     } else console.log("no azan");
                     
                 }, 5000);
