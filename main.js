@@ -12,7 +12,6 @@ let todayDate = yourDate.toISOString().split('T')[0];
 
 
 let azan = document.getElementById("myAudio");
-azan.load();
 
 
 
@@ -109,9 +108,7 @@ if (navigator.geolocation) {
                         
                         if (!isPlaying) {
                             console.log("play azan");
-                            azan.play();
                             azan.pause();
-                            azan.play();
                             isPlaying = true;
                         }
                         
