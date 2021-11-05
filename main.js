@@ -11,7 +11,7 @@ const yourDate = new Date();
 let todayDate = yourDate.toISOString().split('T')[0];
 
 
-let azan = new Audio("files/azan-iqama.ogg");
+let azan = document.getElementById("myAudio");
 
 
 
