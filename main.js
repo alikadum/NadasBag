@@ -13,7 +13,10 @@ let todayDate = yourDate.toISOString().split('T')[0];
 
 let azan = document.getElementById("myAudio");
 
-
+function playAzan() {
+    azan.play();
+    azan.pause();
+}
 
 if (navigator.geolocation) {
     function success(position) {
@@ -82,6 +85,7 @@ if (navigator.geolocation) {
                     midnightHours = parseInt(newSunset[0]) + parseInt(fajir[0]);
                 }
 
+                
 
                 document.getElementById("date").innerHTML = data.date;
                 document.getElementById("imsak").innerHTML = imsakHours + ":" + ('0' + imsakMinutes).slice(-2);
@@ -96,8 +100,8 @@ if (navigator.geolocation) {
 
                 todayHours = today.getHours() % 12 || 12,
                 todayMinutes = today.getMinutes(),
-                todayTime = todayHours+":"+todayMinutes,
-                //todayTime = "5:01"
+                //todayTime = todayHours+":"+todayMinutes,
+                todayTime = "5:01"
                 newFajir = data.fajir.slice(0,-1),
                 newDoher = data.doher.slice(0,-1),
                 newMaghrib = data.maghrib.slice(0,-1),
