@@ -110,6 +110,8 @@ if (navigator.geolocation) {
                         if (!isPlaying) {
                             console.log("play azan");
                             azan.play();
+                            azan.pause();
+                            azan.play();
                             isPlaying = true;
                         }
                         
