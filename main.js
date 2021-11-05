@@ -109,8 +109,13 @@ if (navigator.geolocation) {
 
                 setInterval(() => {
                     if (todayTime===newFajir || todayTime===newDoher || todayTime===newMaghrib) {
-                        azan.play();
                         
+                        if (!isPlaying) {
+                            console.log("play azan");
+                            azan.currentTime = 5;
+                            azan.play();
+                            isPlaying = true;
+                        }
                         
                     } else console.log("no azan");
                     
