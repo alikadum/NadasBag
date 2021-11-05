@@ -16,6 +16,21 @@ body {
     cursor: pointer;
 }
 
+.activate-azan {
+    background-color: #0ad89a;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 0; 
+    margin: auto; 
+    width: 100%;
+    line-height: 50vh;
+    text-align: center;
+    font-size: larger;
+
+}
+
 .headline {
     width: 100vw;
     height: 20vh;

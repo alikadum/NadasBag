@@ -13,8 +13,12 @@ let todayDate = yourDate.toISOString().split('T')[0];
 
 let azan = document.getElementById("myAudio");
 
-function playAzan() {
-    console.log("click");
+function activateAzan() {
+    azan.play();
+    azan.pause();
+    console.log("activate");
+    document.getElementById("activateAzan").style.display="none"
+    
 }
 
 if (navigator.geolocation) {
