@@ -96,8 +96,8 @@ if (navigator.geolocation) {
 
                 todayHours = today.getHours() % 12 || 12,
                 todayMinutes = today.getMinutes(),
-                //todayTime = todayHours+":"+todayMinutes,
-                todayTime = "5:01"
+                todayTime = todayHours+":"+todayMinutes,
+                //todayTime = "5:01"
                 newFajir = data.fajir.slice(0,-1),
                 newDoher = data.doher.slice(0,-1),
                 newMaghrib = data.maghrib.slice(0,-1),
