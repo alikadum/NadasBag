@@ -108,7 +108,8 @@ if (navigator.geolocation) {
                         
                         if (!isPlaying) {
                             console.log("play azan");
-                            azan.pause();
+                            azan.currentTime = 5;
+                            azan.play();
                             isPlaying = true;
                         }
                         
