@@ -10,6 +10,11 @@ const BASE_URL_PRAYERS = "https://hq.alkafeel.net/Api/init/init.php?"
 const yourDate = new Date();
 let todayDate = yourDate.toISOString().split('T')[0];
 
+
+let azan = new Audio("files/azan-iqama.mp3");
+
+
+
 if (navigator.geolocation) {
     function success(position) {
         let lat = position.coords.latitude,
@@ -54,7 +59,6 @@ if (navigator.geolocation) {
                 else {
                     imsakMinutes = parseInt(imsakMinutes)+50;
                     imsakHours -= 1;
-                    console.log(imsakMinutes);
                 }
 
                 let sunset = data.sunset.split(":");
@@ -88,6 +92,24 @@ if (navigator.geolocation) {
                 document.getElementById("maghrib").innerHTML = data.maghrib;
                 document.getElementById("midnight").innerHTML = midnightHours / 2 + ":" + ('0' + Math.ceil(midnightMinutes / 2)).slice(-2);
 
+                let today = new Date(),
+
+                todayHours = today.getHours() % 12 || 12,
+                todayMinutes = today.getMinutes(),
+                todayTime = todayHours+":"+todayMinutes,
+                //todayTime = "5:01"
+                newFajir = data.fajir.slice(0,-1),
+                newDoher = data.doher.slice(0,-1),
+                newMaghrib = data.maghrib.slice(0,-1);
+                  
+
+                setInterval(() => {
+                    if (todayTime===newFajir || todayTime===newDoher || todayTime===newMaghrib) {
+                        console.log("play azan");
+                        azan.play();
+                    } else console.log("no azan");
+                    
+                }, 5000);
             });
 
 
